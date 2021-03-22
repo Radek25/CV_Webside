@@ -1,0 +1,28 @@
+body{
+    box-sizing: border-box;
+}
+header{
+    width: 80%;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-image: url(../CV_Webside/imgs/HeaderBackground.png); */
+}
+.top-of-header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-of-header p{
+    text-transform: uppercase;
+}
+.top-of-header ul{
+    list-style-type: none;
+    padding: 0;
+}
+.top-of-header li{
+    border: 1px solid white;
+    display: inline;
+}
