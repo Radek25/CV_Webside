@@ -3,12 +3,14 @@ body{
 }
 header{
     width: 80%;
-    
+    height: 500px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-image: url(../CV_Webside/imgs/HeaderBackground.png); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../CV_Webside/imgs/BackgroundHeader.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .top-of-header{
     width: 80%;
@@ -17,12 +19,32 @@ header{
 }
 .top-of-header p{
     text-transform: uppercase;
+    color: white;
 }
-.top-of-header ul{
+.top-of-header, .title-and-socialmedia ul{
     list-style-type: none;
     padding: 0;
 }
-.top-of-header li{
-    border: 1px solid white;
+.top-of-header, .title-and-socialmedia li{
     display: inline;
+    color: white;
+    padding: 5px;
 }
+.title-and-socialmedia{
+    width: 50%;
+    display: flex;
+    background-color: red;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-and-socialmedia h1{
+    background-color: white;
+}
+/* .title-and-socialmedia li{
+    display: inline;
+    color: white;
+    padding: 5px;
+}  */
+/* Czemu nie mogę tego zrobić z nav top header? */
