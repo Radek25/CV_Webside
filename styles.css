@@ -181,6 +181,8 @@ main figure img{
     width: 140px;
     height: 35px;
     border-radius: 5px;
+    text-decoration: none;
+    outline: none;
 }
 .download-cv{
     background-color: black;
@@ -217,6 +219,7 @@ footer{
     margin: 10px;
     text-align: center;
     box-sizing: border-box;
+    box-shadow: 3px 3px 10px #Bababa;
 }
 .tile h1{
     font-size: 20px;
@@ -236,4 +239,24 @@ footer{
     justify-content: center;
     align-items: center;
     color: #353535
+}
+
+/* Header Nav Links */
+.nav-menu-with-logo a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav-menu-with-logo a:hover{
+    border-bottom: 2px solid #ffffff;
+}
+.nav-menu-with-logo a:visited{
+    color: #ffffff;
+}
+
+/* Header SocialMedia Links */
+.title-and-socialmedia a:hover{
+    font-size: 20px;
+}
+.title-and-socialmedia a:visited{
+    color: #ffffff;
 }
