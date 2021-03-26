@@ -1,13 +1,13 @@
 body{
     box-sizing: border-box;
+    background-color: #ffffff;
 }
-header, main{
+header, main, footer{
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
 }
 
 /* Header Styles */
@@ -33,10 +33,10 @@ header{
 }
 .top-of-header p{
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
 }
 .title-and-socialmedia p{
-    background-color: white;
+    background-color: #ffffff;
 }
 .top-of-header ul, .title-and-socialmedia ul{
     list-style-type: none;
@@ -44,7 +44,7 @@ header{
 }
 .top-of-header li, .title-and-socialmedia li{
     display: inline;
-    color: white;
+    color: #ffffff;
     padding: 5px;
 }
 
@@ -52,6 +52,7 @@ header{
 
 main{
     height: 500px;
+    margin-top: 50px;
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
@@ -91,9 +92,7 @@ main figure img{
     text-transform: uppercase;
 }
 .about-me article p{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: inherit;
     font-size: 1.5vw;
 }
 
@@ -107,13 +106,14 @@ main figure img{
 .skill-bar-wrapper{
     width: 90%;
     height: 20px;
-    background-color: lightslategray;
+    background-color: #f6f6f6;
+    border:  1px solid #ebebeb;
     border-radius: 5px;
 }
 .first-skill-bar, .second-skill-bar, .third-skill-bar{
     height: 100%;
     background-color: black;
-    color: white;
+    color: #ffffff;
     text-align: right;
     padding-right: 10px;
     border-radius: 5px;
@@ -127,6 +127,13 @@ main figure img{
 .third-skill-bar{
     width: 80%;
 }
+.skill-bar-wrapper p{
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 8px;
+}
 
 /* Main Buttons Styled */
 .about-me button{
@@ -136,12 +143,49 @@ main figure img{
 }
 .download-cv{
     background-color: black;
-    color: white;
+    color: #ffffff;
     border: none;
 }
 .contact-me{
-    background-color: white;
+    background-color: #ffffff;
     margin-left: 2px;
     color: black;
     border: 2px solid grey;
+}
+
+/* Footer Styled */
+
+footer{
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.services-tiles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tile{
+    width: 250px;
+    height: 220px;
+    background-color: #ffffff;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.tile .fas, .far{
+    width: 50px;
+    height: 50px;
+    margin: 30px auto 10px auto;
+    border-radius: 50px;
+    background-color: #f5f5f5;
+}
+.fa-laptop, .fa-umbrella, .fa-bullhorn, .fa-gem, .fa-desktop, .fa-camera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #353535
 }
