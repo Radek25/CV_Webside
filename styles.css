@@ -13,7 +13,7 @@ header, main{
 /* Header Styles */
 
 header{
-    height: 450px;
+    height: 550px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../CV_Webside/imgs/BackgroundHeader.jpg);
     background-position: center;
     background-size: cover;
@@ -51,34 +51,97 @@ header{
 /* Main Styles */
 
 main{
-    height: 350px;
-    background-color: red;
+    height: 500px;
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
 }
 main figure, .about-me{
     height: 100%;
-    background-color: yellow;
     margin: 0;
 }
 main figure{
     width: 30%;
 }
 .about-me{
-    display: inline;
     width: 70%;
-    background-color: blueviolet;
-}
-.about-me article, .skill-bar{
-    width: 100%;
-    height: 50%;
+    padding-left: 50px;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
+main figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-me article, .skill-bars{
+    width: 100%;
+}
+
+/* Main Article Styled */
 .about-me article{
-    background-color: blue;
+    height: 45%;
 }
-.skill-bar{
-    background-color: brown;
+.about-me article h1, h6{
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+.about-me article h6{
+    text-transform: uppercase;
+}
+.about-me article p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+/* Main Skill Bars Styled */
+.skill-bars{
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.skill-bar-wrapper{
+    width: 90%;
+    height: 20px;
+    background-color: lightslategray;
+    border-radius: 5px;
+}
+.first-skill-bar, .second-skill-bar, .third-skill-bar{
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.first-skill-bar{
+    width: 90%;
+}
+.second-skill-bar{
+    width: 60%;
+}
+.third-skill-bar{
+    width: 80%;
+}
+
+/* Main Buttons Styled */
+.about-me button{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+}
+.download-cv{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.contact-me{
+    background-color: white;
+    margin-left: 2px;
+    color: black;
+    border: 2px solid grey;
 }
