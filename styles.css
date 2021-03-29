@@ -259,7 +259,8 @@ footer{
 
 
 /* RWD */
-@media (max-width: 850px){
+
+@media (max-width: 1000px){
     header, main, footer{
         width: 100%;
     }
@@ -273,11 +274,11 @@ footer{
         margin: 20px 0 30px 0;
     }
     .nav-menu-with-logo ul{
-        margin: 0;
-        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 0;
+        padding: 0;
     }
     .nav-menu-with-logo li{
         margin: 5px 5px 5px 5px;
@@ -289,37 +290,38 @@ footer{
     /* Main */
     main{
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
         height: auto;
-    }
-    main figure{
-        width: 50%;
-        margin: 0 auto;
-        margin-bottom: 20px;
         justify-content: center;
     }
-    main .about-me{
-        width: 100%;
-        padding: 0;
+    main figure{
+        justify-content: center;
         margin: 0 auto;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+    main .about-me{
+        margin: 0 auto;
+        padding: 0;
         text-align: center;
+        width: 100%;
     }
     .about-me article p{
         font-size: 15px;
     }
     .skill-bars{
-        width: 100%;
-        margin-bottom: 20px;
         display: flex;
         justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 100%;
     }
     .skill-bar-wrapper{
         margin: 5px 0 5px 0;
     }
     .about-me button{
-        width: 100%;
         margin-bottom: 10px;
+        width: 40%;
     }
 }
