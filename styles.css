@@ -238,14 +238,14 @@ footer{
 }
 
 /* Link Styled */
-.nav-menu-with-logo a, .title-and-socialmedia a:link{
+.nav-menu-with-logo a:visited, .title-and-socialmedia a:link{
     color: #ffffff;
     text-decoration: none;
 }
 .nav-menu-with-logo a:hover{
     border-bottom: 2px solid #ffffff;
 }
-.nav-menu-with-logo a, .title-and-socialmedia a:visited{
+.nav-menu-with-logo a:visited, .title-and-socialmedia a:visited{
     color: #ffffff;
 }
 
