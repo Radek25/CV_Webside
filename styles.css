@@ -233,10 +233,10 @@ footer{
     width: 50px;
 }
 .fa-laptop, .fa-umbrella, .fa-bullhorn, .fa-gem, .fa-desktop, .fa-camera{
-    align-items: center;
     color: #353535;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* Header Nav Links */
