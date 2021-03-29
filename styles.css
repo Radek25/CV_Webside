@@ -237,24 +237,20 @@ footer{
     width: 50px;
 }
 
-/* Header Nav Links */
-.nav-menu-with-logo a{
+/* Link Styled */
+.nav-menu-with-logo a, .title-and-socialmedia a:link{
     color: #ffffff;
     text-decoration: none;
 }
 .nav-menu-with-logo a:hover{
     border-bottom: 2px solid #ffffff;
 }
-.nav-menu-with-logo a:visited{
+.nav-menu-with-logo a, .title-and-socialmedia a:visited{
     color: #ffffff;
 }
 
-/* Header SocialMedia Links */
 .title-and-socialmedia a:hover{
     font-size: 20px;
-}
-.title-and-socialmedia a:visited{
-    color: #ffffff;
 }
 
 
@@ -322,6 +318,6 @@ footer{
     }
     .about-me button{
         margin-bottom: 10px;
-        width: 40%;
+        width: 50%;
     }
 }
