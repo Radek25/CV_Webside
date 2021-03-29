@@ -238,7 +238,7 @@ footer{
 }
 
 /* Link Styled */
-.nav-menu-with-logo a:visited, .title-and-socialmedia a:link{
+.nav-menu-with-logo a:link, .title-and-socialmedia a:link{
     color: #ffffff;
     text-decoration: none;
 }
@@ -318,6 +318,12 @@ footer{
     }
     .about-me button{
         margin-bottom: 10px;
-        width: 50%;
+        width: 40%;
+    }
+
+    /* Footer*/
+    .tile{
+        height: auto;
+        padding: 5px;
     }
 }
