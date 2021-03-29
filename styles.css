@@ -1,42 +1,43 @@
 body{
-    box-sizing: border-box;
     background-color: #F3f3f3;
+    box-sizing: border-box;
 }
 header, main, footer{
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 70px;
 }
 
 /* Header Styles */
 
 header{
-    height: 550px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../CV_Webside/imgs/BackgroundHeader.jpg);
     background-position: center;
     background-size: cover;
+    height: 550px;
 }
 .nav-menu-with-logo{
-    width: 80%;
     display: flex;
     justify-content: space-between;
+    width: 80%;
+}
+.nav-menu-with-logo p{
+    color: #ffffff;
+    font-family: 'Chango', cursive;
+    margin-right: 40px;
+    text-transform: uppercase;
 }
 .title-and-socialmedia{
-    width: 50%;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 140px auto 250px auto;
-}
-.nav-menu-with-logo p{
-    margin-right: 40px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-family: 'Chango', cursive;
+    width: 50%;
 }
 .title-and-socialmedia h1{
     color: #ffffff;
@@ -52,32 +53,34 @@ header{
     font-weight: 100;
     font-size: 40px;
     margin-top: 10px;
-    position: relative;
 }
 .title-and-socialmedia span{
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 40px;
+    position: relative;
 }
 .title-and-socialmedia span::after{
-    content: '';
-    position: absolute;
-    top: 18px;
-    right: -35px;
-    display: inline;
-    width: 45px;
-    height: 1px; 
-    transform: rotate(90deg);
     background-color: #ffffff;
+    content: '';
+    display: inline;
+    height: 1px; 
+    position: absolute;
+    right: -35px;
+    top: 18px;
+    transform: rotate(90deg);
+    width: 45px;
 }
+
+/* Common List Styled */
 .nav-menu-with-logo ul, .title-and-socialmedia ul{
     list-style-type: none;
     padding: 0;
 }
 .nav-menu-with-logo li, .title-and-socialmedia li{
-    display: inline;
     color: #ffffff;
+    display: inline;
     font-family: 'Roboto', sans-serif;
     padding: 5px;
 }
@@ -85,12 +88,10 @@ header{
 /* Main Styles */
 
 main{
-    height: 500px;
-    margin-top: 50px;
-    align-items: center;
-    padding: 40px;
-    box-sizing: border-box;
     background-color: #ffffff;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 40px;
 }
 main figure, .about-me{
     height: 100%;
@@ -99,21 +100,21 @@ main figure, .about-me{
 main figure{
     width: 30%;
 }
-.about-me{
-    width: 70%;
-    padding-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
 main figure img{
-    width: 100%;
     height: 100%;
     object-fit: cover;
+    width: 100%;
+}
+.about-me{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    width: 70%;
 }
 .about-me article, .skill-bars{
-    width: 100%;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 /* Main Article Styled */
@@ -121,43 +122,48 @@ main figure img{
     height: 45%;
 }
 .about-me article h1, h6{
-    padding: 5px 0 0 0;
     margin: 0;
+    padding: 5px 0 0 0;
 }
 .about-me article h1{
     font-size: 25px;
 }
 .about-me article h6{
-    font-size: 10px;
     color: #808080;
+    font-size: 10px;
     text-transform: uppercase;
 }
 .about-me article p{
-    text-align: inherit;
     font-size: 1.3vw;
+    text-align: inherit;
 }
 
 /* Main Skill Bars Styled */
 .skill-bars{
-    height: 30%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    height: auto;
+    padding: 2px;
 }
 .skill-bar-wrapper{
-    width: 90%;
-    height: 20px;
     background-color: #f6f6f6;
     border:  1px solid #ebebeb;
     border-radius: 5px;
+    height: 20px;
+    width: 90%;
+}
+.skill-bar-wrapper p{
+    float: left;
+    height: 100%;
+    margin: 0 0 0 8px;
 }
 .first-skill-bar, .second-skill-bar, .third-skill-bar{
-    height: 100%;
-    background-color: black;
     color: #ffffff;
-    text-align: right;
-    padding-right: 10px;
+    background-color: black;
     border-radius: 5px;
+    height: 100%;
+    padding-right: 10px;
+    text-align: right;
 }
 .first-skill-bar{
     width: 90%;
@@ -168,44 +174,36 @@ main figure img{
 .third-skill-bar{
     width: 80%;
 }
-.skill-bar-wrapper p{
-    height: 100%;
-    float: left;
-    display: flex;
-    align-items: center;
-    margin: 0 0 0 8px;
-}
 
 /* Main Buttons Styled */
 .about-me button{
-    width: 140px;
-    height: 35px;
     border-radius: 5px;
-    text-decoration: none;
+    height: 35px;
     outline: none;
+    text-decoration: none;
+    width: 140px;
 }
-.download-cv{
-    background-color: black;
+.download-cv-button{
     color: #ffffff;
+    background-color: black;
     border: none;
 }
-.contact-me{
-    background-color: #ffffff;
-    margin-left: 2px;
+.contact-me-button{
     color: black;
     border: 2px solid #808080;
+    background-color: #ffffff;
+    margin-left: 2px;
 }
 
 /* Footer Styled */
 
 footer{
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
     background-color: #ededed;
-    padding: 50px;
     box-sizing: border-box;
+    height: auto;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    padding: 50px;
 }
 .services-tiles{
     display: flex;
@@ -213,13 +211,13 @@ footer{
     justify-content: center;
 }
 .tile{
-    width: 250px;
-    height: 220px;
     background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px #bababa;
+    height: 220px;
     margin: 10px;
     text-align: center;
-    box-sizing: border-box;
-    box-shadow: 3px 3px 10px #Bababa;
+    width: 250px;
 }
 .tile h1{
     font-size: 20px;
@@ -228,17 +226,17 @@ footer{
     font-size: 15px;
 }
 .tile .fas, .far{
-    width: 50px;
+    background-color: #f5f5f5;
+    border-radius: 50px;
     height: 50px;
     margin: 30px auto 10px auto;
-    border-radius: 50px;
-    background-color: #f5f5f5;
+    width: 50px;
 }
 .fa-laptop, .fa-umbrella, .fa-bullhorn, .fa-gem, .fa-desktop, .fa-camera{
+    align-items: center;
+    color: #353535;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: #353535
 }
 
 /* Header Nav Links */
