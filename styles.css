@@ -225,7 +225,7 @@ footer{
 .tile p{
     font-size: 15px;
 }
-.tile .fas, .far{
+.tile .fas, .tile .far{
     align-items: center;
     background-color: #f5f5f5;
     border-radius: 50px;
@@ -238,7 +238,7 @@ footer{
 }
 
 /* Link Styled */
-.nav-menu-with-logo a:visited, .title-and-socialmedia a:link{
+.nav-menu-with-logo a:link, .title-and-socialmedia a:link{
     color: #ffffff;
     text-decoration: none;
 }
@@ -264,6 +264,7 @@ footer{
     /* Header */
     .nav-menu-with-logo{
         flex-direction: column;
+        height: 150px;
         text-align: center;
     }
     .nav-menu-with-logo p{
@@ -281,6 +282,7 @@ footer{
     }
     .title-and-socialmedia{
         width: 80%;
+        margin: 0;
     }
 
     /* Main */
@@ -318,6 +320,12 @@ footer{
     }
     .about-me button{
         margin-bottom: 10px;
-        width: 50%;
+        width: 40%;
+    }
+
+    /* Footer*/
+    .tile{
+        height: auto;
+        padding: 5px;
     }
 }
